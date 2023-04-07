@@ -1,5 +1,6 @@
 import * as React from "react";
 import logo from "../../assets/images/logo.svg";
+import FontSelector from "../FontSelector/FontSelector";
 import "./Header.css";
 
 interface IHeaderProps {}
@@ -11,11 +12,7 @@ const Header: React.FunctionComponent<IHeaderProps> = (props) => {
         <img src={logo} alt="logo" />
       </div>
       <div className="options">
-        <select name="font" id="font" title="Select Font">
-          <option value="">Sans Serif</option>
-          <option value="">Serif</option>
-          <option value="">Mono</option>
-        </select>
+        <FontSelector />
 
         <div className="theme">
           <label className="switch">

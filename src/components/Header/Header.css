@@ -10,9 +10,6 @@
   align-items: center;
 }
 
-.options select {
-  border: none;
-}
 
 .switch {
   position: relative;
@@ -50,7 +47,7 @@
 }
 
 input:checked + .slider {
-  background-color: #A445ED;
+  background-color: #a445ed;
 }
 
 input:focus + .slider {
