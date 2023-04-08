@@ -1,0 +1,29 @@
+@import "./../../theme-variables.scss";
+
+.Search {
+    position: relative;
+    margin-bottom: 45px;
+}
+
+.Search input {
+  width: 100%;
+  @include themify($themes) {
+    background-color: themed("searchBackground");
+  }
+  border: none;
+  font-size: 20px;
+  font-weight: 700;
+  @include themify($themes) {
+    color: themed("textColor");
+  }
+  outline: none;
+  padding: 20px 24px;
+  border-radius: 16px;
+}
+
+.Search .searchIcon {
+    position: absolute;
+    font-size: 15px;
+    top: 24px;
+    right: 24px;
+}
