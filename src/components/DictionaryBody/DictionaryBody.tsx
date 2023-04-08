@@ -1,14 +1,22 @@
-import * as React from 'react';
-import Search from '../Search/Search';
+import * as React from "react";
+import Search from "../Search/Search";
+import { useContext } from "react";
+import { WordContext } from "../../contexts/word-context";
 
-interface IDictionaryBodyProps {
-}
+interface IDictionaryBodyProps {}
 
-const DictionaryBody: React.FunctionComponent<IDictionaryBodyProps> = (props) => {
+const DictionaryBody: React.FunctionComponent<IDictionaryBodyProps> = (
+  props
+) => {
+  const [word, setWord] = React.useState<any[]>([]);
+
   return (
-    <div className='Dictionary'>
+    <WordContext.Provider value={{word, setWord }}>
+      <div className="Dictionary">
         <Search />
-    </div>
+        
+      </div>
+    </WordContext.Provider>
   );
 };
 

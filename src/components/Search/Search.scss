@@ -1,5 +1,9 @@
 @import "./../../theme-variables.scss";
 
+.Search {
+    position: relative;
+}
+
 .Search input {
   width: 100%;
   @include themify($themes) {
@@ -14,4 +18,11 @@
   outline: none;
   padding: 20px 24px;
   border-radius: 16px;
+}
+
+.Search .searchIcon {
+    position: absolute;
+    font-size: 15px;
+    top: 24px;
+    right: 24px;
 }
