@@ -1,7 +1,7 @@
 import * as React from "react";
 import logo from "../../assets/images/logo.svg";
 import FontSelector from "../FontSelector/FontSelector";
-import "./Header.css";
+import "./Header.scss";
 import ThemeSwitch from "../ThemeSwitch/ThemeSwitch";
 
 interface IHeaderProps {}

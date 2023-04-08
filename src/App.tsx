@@ -1,17 +1,23 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Header from './components/Header/Header'
+import { useState } from "react";
+import "./App.scss";
+
+import { ThemeContext } from "./contexts/theme-context";
+
+import Header from "./components/Header/Header";
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const [theme, setTheme] = useState("light");
   return (
-    <div className="App">
-      <Header />
-    </div>
-  )
+    <ThemeContext.Provider value={{ theme, setTheme }}>
+      <div className={`theme-${theme}`}>
+        <div className="App">
+          <div className="wrapper">
+            <Header />
+          </div>
+        </div>
+      </div>
+    </ThemeContext.Provider>
+  );
 }
 
-export default App
+export default App;

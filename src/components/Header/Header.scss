@@ -1,6 +1,9 @@
+@import './../../theme-variables.scss';
+
 .Header {
   display: flex;
   justify-content: space-between;
+  
 }
 .logo {
   width: 32px;

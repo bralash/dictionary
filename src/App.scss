@@ -1,0 +1,19 @@
+@import './theme-variables.scss';
+
+.App {
+  width: 100vw;
+  padding-top: 58px;
+  font-family: 'Inter';
+  display: flex;
+  justify-content: center;
+  border: 1px solid green;
+  min-height: 100vh;
+  @include themify($themes) {
+    background: themed('bodyBackgroundColor');
+  }
+}
+
+.wrapper {
+  width: 737px;
+  border: 1px solid red;
+}
