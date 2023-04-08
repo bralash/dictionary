@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
 body {
   margin: 0;
   display: flex;
   justify-content: center;
   min-width: 320px;
   margin-top: 58px;
+  font-family: 'Inter';
 }
 
 img {
