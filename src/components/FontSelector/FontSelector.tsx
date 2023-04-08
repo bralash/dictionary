@@ -1,5 +1,5 @@
 import * as React from "react";
-import "./FontSelector.css";
+import "./FontSelector.scss";
 
 interface IFontSelectorProps {}
 

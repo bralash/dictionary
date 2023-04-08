@@ -1,3 +1,5 @@
+@import './../../theme-variables.scss';
+
 select::-ms-expand {
   display: none;
 }
@@ -29,13 +31,16 @@ select {
   border: 0;
   box-shadow: none;
   flex: 1;
-  color: #000;
+  @include themify($themes) {
+    color: themed('textColor');
+  }
   background-image: none;
   cursor: pointer;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
   font-family: "Inter";
+  background-color: transparent;
 }
 
 select option:checked {

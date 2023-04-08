@@ -14,7 +14,6 @@ const Header: React.FunctionComponent<IHeaderProps> = (props) => {
       </div>
       <div className="options">
         <FontSelector />
-
         <ThemeSwitch />
       </div>
     </header>
