@@ -16,3 +16,4 @@ const FontSelector: React.FunctionComponent<IFontSelectorProps> = (props) => {
 };
 
 export default FontSelector;
+

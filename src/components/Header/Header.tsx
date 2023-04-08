@@ -2,6 +2,7 @@ import * as React from "react";
 import logo from "../../assets/images/logo.svg";
 import FontSelector from "../FontSelector/FontSelector";
 import "./Header.css";
+import ThemeSwitch from "../ThemeSwitch/ThemeSwitch";
 
 interface IHeaderProps {}
 
@@ -14,12 +15,7 @@ const Header: React.FunctionComponent<IHeaderProps> = (props) => {
       <div className="options">
         <FontSelector />
 
-        <div className="theme">
-          <label className="switch">
-            <input type="checkbox" title="Theme" />
-            <span className="slider round"></span>
-          </label>
-        </div>
+        <ThemeSwitch />
       </div>
     </header>
   );

@@ -8,6 +8,7 @@ select::-ms-expand {
   width: 120px;
   height: 24px;
   overflow: hidden;
+  margin-right: 26px;
 }
 
 .FontSelector::after {
@@ -23,17 +24,20 @@ select::-ms-expand {
 }
 
 select {
-    appearance: none;
-    outline: 0;
-    border: 0;
-    box-shadow: none;
-    flex: 1;
-    color: #000;
-    background-image: none;
-    cursor: pointer;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 24px;
-    font-family: 'Inter';
-  }
-  
+  appearance: none;
+  outline: 0;
+  border: 0;
+  box-shadow: none;
+  flex: 1;
+  color: #000;
+  background-image: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Inter";
+}
+
+select option:checked {
+    background-color: #A445ED;
+}
