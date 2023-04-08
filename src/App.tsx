@@ -4,6 +4,7 @@ import "./App.scss";
 import { ThemeContext } from "./contexts/theme-context";
 
 import Header from "./components/Header/Header";
+import DictionaryBody from "./components/DictionaryBody/DictionaryBody";
 
 function App() {
   const isBrowserDefaultDark = () => window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -21,6 +22,7 @@ function App() {
         <div className="App">
           <div className="wrapper">
             <Header />
+            <DictionaryBody />
           </div>
         </div>
       </div>
