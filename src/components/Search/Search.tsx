@@ -10,7 +10,7 @@ const Search: React.FunctionComponent<ISearchProps> = (props) => {
   const { word, setWord } = useContext(WordContext);
 
   const handleSubmit = async (e: any) => {
-    if (e.charCode === 13) {
+    if (e.target.value != '' && e.charCode === 13) {
       const baseUrl =
         `https://api.dictionaryapi.dev/api/v2/entries/en/${e.target.value}`;
       try {
