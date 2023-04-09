@@ -1,0 +1,26 @@
+@import "./../../theme-variables.scss";
+
+.wordWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.word h1 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 77px;
+  @include themify($themes) {
+    color: themed("textColor");
+  }
+  margin-bottom: 8px;
+}
+
+.word span {
+    color: #A445ED;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+}
+
