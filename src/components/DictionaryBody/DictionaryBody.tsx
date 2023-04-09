@@ -10,7 +10,9 @@ interface IDictionaryBodyProps {}
 const DictionaryBody: React.FunctionComponent<IDictionaryBodyProps> = (
   props
 ) => {
+  const [input, setInput] = React.useState();
   const [word, setWord] = React.useState<any[]>([]);
+  
 
   const handleSubmit = async (e: any) => {
     if (e.target.value != "" && e.charCode === 13) {

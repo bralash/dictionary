@@ -1,9 +1,13 @@
 @import "./../../theme-variables.scss";
 
-
+* {
+  @include themify($themes) {
+    color: themed("textColor");
+  }
+}
 .Search {
-    position: relative;
-    margin-bottom: 45px;
+  position: relative;
+  margin-bottom: 45px;
 }
 
 .Search input {
@@ -23,8 +27,8 @@
 }
 
 .Search .searchIcon {
-    position: absolute;
-    font-size: 15px;
-    top: 24px;
-    right: 24px;
+  position: absolute;
+  font-size: 15px;
+  top: 24px;
+  right: 24px;
 }
