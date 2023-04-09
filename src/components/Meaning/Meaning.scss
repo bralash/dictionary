@@ -1,0 +1,60 @@
+.Meaning {
+  margin-bottom: 40px;
+}
+
+.speech {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.partOfSpeech {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  font-style: italic;
+}
+.spacer {
+  width: 656px;
+  border: 1px solid #e9e9e9;
+  height: 1px;
+}
+
+.definitions {
+  margin-bottom: 40px;
+}
+
+.definitions h3 {
+  margin: 0px;
+  margin-bottom: 25px;
+  font-weight: 400;
+  color: #757575;
+}
+
+.definitions ul {
+  margin: 0px;
+}
+
+.definitions ul li {
+  margin-bottom: 13px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.synonyms span {
+  display: inline-block;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  margin-right: 22px;
+}
+
+.synonyms .label {
+  color: #757575;
+}
+
+.synonyms .synonym {
+  color: #a445ed;
+}
